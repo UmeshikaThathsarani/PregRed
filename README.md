@@ -1,3 +1,2 @@
 # PregRed
-Readiness Checker for Healthy Delivery
-hi Nishean
+Readiness Checker for Healthy Delivery - GUI
