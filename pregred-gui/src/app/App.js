@@ -1,13 +1,13 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Home from "./pages/home/Home";
-import Prediction from "./pages/prediction/Prediction";
+import Home from './pages/home/Home';
+import Prediction from './pages/prediction/Prediction';
 
-import AppHeader from "./components/app-header/AppHeader";
-import AppNavBar from "./components/app-nav-bar/AppNavBar";
+import AppHeader from './components/app-header/AppHeader';
+import AppNavBar from './components/app-nav-bar/AppNavBar';
 
-import "./App.css";
+import './App.css';
 
 function App() {
   return (

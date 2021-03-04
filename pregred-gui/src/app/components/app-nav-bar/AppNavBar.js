@@ -1,24 +1,23 @@
-import { useHistory } from "react-router-dom";
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
-import * as Constant from "../../constants/Constant";
+import * as Constant from '../../constants/Constant';
 
-import "./AppNavBar.css";
+import './AppNavBar.css';
 
 function AppNavBar() {
-  let history = useHistory();
+  const history = useHistory();
 
   return (
     <List component="nav" className="nav-container">
-      {Constant.PAGES.map((page, index) => {
-        return (
-          <ListItem key={index} button onClick={() => history.push(page.path)}>
-            <ListItemIcon></ListItemIcon>
-            <ListItemText primary={page.name}></ListItemText>
+      {Constant.PAGES.map((page) => (
+          <ListItem key={page.id} button onClick={() => history.push(page.path)}>
+            <ListItemIcon />
+            <ListItemText primary={page.name} />
           </ListItem>
-        );
-      })}
+        ))}
     </List>
   );
 }

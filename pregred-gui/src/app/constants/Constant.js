@@ -1,12 +1,16 @@
 export const PAGES = [
   {
-    name: "Home",
-    path: "/",
-    icon: "home",
+    id: 1,
+    name: 'Home',
+    path: '/',
+    icon: 'home',
   },
   {
-    name: "Prediction",
-    path: "/prediction",
-    icon: "",
+    id: 2,
+    name: 'Prediction',
+    path: '/prediction',
+    icon: '',
   },
 ];
+
+export const OTHER_CONST_HERE = '';
