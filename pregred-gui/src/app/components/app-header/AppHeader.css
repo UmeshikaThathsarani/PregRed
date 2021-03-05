@@ -1,0 +1,13 @@
+.header-container {
+  border-bottom: 1px black solid;
+  width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.btn {
+  margin: 10px;
+}
