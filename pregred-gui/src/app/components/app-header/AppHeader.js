@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Button from '@material-ui/core/Button';
+import { Button } from 'antd';
 
 import './AppHeader.css';
 
@@ -9,13 +8,13 @@ function AppHeader() {
     <div className="header-container">
       <h2> PregRed </h2>
       <div className="btn-container">
-        <Button variant="contained" color="primary" className="btn">
+        <Button type="primary" shape="round">
           SignUp
         </Button>
-        <Button variant="contained" color="primary" className="btn">
+        <Button type="primary" shape="round">
           Login
         </Button>
-        <Button variant="contained" color="primary" className="btn">
+        <Button type="primary" shape="round">
           Logout
         </Button>
       </div>
