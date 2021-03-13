@@ -1,7 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-
-import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import { Menu } from 'antd';
 
 import * as Constant from '../../constants/Constant';
 
@@ -11,14 +10,14 @@ function AppNavBar() {
   const history = useHistory();
 
   return (
-    <List component="nav" className="nav-container">
-      {Constant.PAGES.map((page) => (
-          <ListItem key={page.id} button onClick={() => history.push(page.path)}>
-            <ListItemIcon />
-            <ListItemText primary={page.name} />
-          </ListItem>
+    <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+        {Constant.PAGES.map((page) => (
+          <Menu.Item key={page.id} onClick={() => history.push(page.path)}>
+            {page.icon}
+            {page.name}
+          </Menu.Item>
         ))}
-    </List>
+    </Menu>
   );
 }
 
