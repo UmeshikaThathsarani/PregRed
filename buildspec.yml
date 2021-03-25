@@ -14,4 +14,4 @@ phases:
     post_build:
       commands:
         - echo "Deploying into the s3 bucket..."
-        - aws s3 sync build/ s3://pregred-s3 --profile pregred-appuser --delete
+        - aws s3 sync build/ s3://pregred-s3 --profile pregred-appuser 
