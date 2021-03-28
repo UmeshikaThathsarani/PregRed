@@ -10,8 +10,9 @@ import AppNavBar from './components/app-nav-bar/AppNavBar';
 
 import 'antd/dist/antd.css';
 import './App.css';
+import AppFooter from './components/app-footer/AppFooter';
 
-const { Content, Footer, Sider } = Layout;
+const { Content,Sider } = Layout;
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
               <Route component={Home} />
             </Switch>
           </Content>
-          <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+          <AppFooter/>
         </Layout>
       </Layout>
     </Router>
