@@ -1,0 +1,29 @@
+.footer-container {
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+}
+
+.f-text {
+  color: white;
+  display: flex;
+}
+
+.dot {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.social {
+  padding-left: 330px;
+  text-align: center;
+}
+
+.f-right {
+  padding-left: 400px;
+}
+
+.b-text {
+  padding-left: 560px;
+  color: white;
+}
