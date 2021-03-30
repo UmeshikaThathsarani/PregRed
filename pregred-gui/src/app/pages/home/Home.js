@@ -30,7 +30,7 @@ function Home() {
         <div className="home-main-div-models">
             <div className="home-div-models">
               <Button type="primary" shape="round" onClick={() => setVisible1(true)}>
-                Why ladies should aware of prepregnancy health care?
+                Why ladies should aware of pre-pregnancy health care?
               </Button>
               <Modal
                 title="Why ladies should aware of prepregnancy health care?"
