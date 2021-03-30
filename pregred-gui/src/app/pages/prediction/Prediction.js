@@ -19,13 +19,13 @@ function Alert() {
        <div className="container-predict-form">
          <h3>Please fill the following information.</h3>
       <div className="container-predict-div-left">
-        <h3>1. Age <input type="text" id="age" name="age"/></h3>
-        <h3>2. Gravidity <input type="text" id="gravidity" name="gravidity"/></h3>
-        <h3>3. Blood Pressure <input type="text" id="BP" name="BP"/></h3>
-        <h3>4. Height<input type="text" id="height" name="height"/></h3>
-        <h3>5. BMI<input type="text" id="BMI" name="BMI"/></h3>
-        <h3>6. Blood Sugar <input type="text" id="BS" name="BS"/></h3>
-        <h3>7. Haemoglobin <input type="text" id="Hb" name="Hb"/></h3>
+        <h3>1. Age <input type="number" id="age" name="age"/></h3>
+        <h3>2. Gravidity <input type="number" id="gravidity" name="gravidity"/></h3>
+        <h3>3. Blood Pressure <input type="number" id="BP" name="BP"/></h3>
+        <h3>4. Height (Enter height in cm)<input type="number" id="height" name="height"/></h3>
+        <h3>5. BMI<input type="number" id="BMI" name="BMI"/></h3>
+        <h3>6. Blood Sugar <input type="number" id="BS" name="BS"/></h3>
+        <h3>7. Haemoglobin <input type="number" id="Hb" name="Hb"/></h3>
       </div>
 
 
