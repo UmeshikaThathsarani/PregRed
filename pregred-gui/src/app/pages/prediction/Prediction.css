@@ -1,0 +1,42 @@
+.container-prediction{
+    display: flex;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* padding-top: 50px; */
+  }
+  .container-predict-input{
+    background-image: linear-gradient(rgb(241, 163, 241),rgb(136, 196, 245));
+    width: 50%;
+  }
+  .container-predict-form{
+    float: bottom;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.container-predict-header{
+    padding-left: 230px;
+}
+.container-predict-div-left{
+    width: 50%;
+    height: 500px;
+    float:left;
+    padding-right: 100px;
+  }
+.container-predict-div-right{
+    width: 50%;
+    height: 500px;
+    float:right;
+    padding-right: 50px;
+  }
+.container-predict-submit{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.container-predict-output{
+    background-Image: url("https://images.pexels.com/photos/3965562/pexels-photo-3965562.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    width:50%;
+    background-position: center;
+}
+ 
