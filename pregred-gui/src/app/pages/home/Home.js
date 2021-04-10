@@ -117,21 +117,24 @@ function Home() {
                 <ol>
                   <li>
                     <a
-                      href="https://www.webmd.com/baby/considering-pregnancy-see-your-doctor-first">
+                      href="https://www.webmd.com/baby/considering-pregnancy-see-your-doctor-first"
+                      target="blank">
                       Your Pre-Pregnancy Checkup
                     </a>
                   </li>
                   <li>
                     <a
                       href="https://www.indiamart.com/proddetail/
-                      pre-pregnancy-counseling-19345211830.html">
+                      pre-pregnancy-counseling-19345211830.html"
+                      target="blank">
                       Pre Pregnancy Counseling
                     </a>
                   </li>
                   <li>
                     <a
                       href="https://www.marchofdimes.org/pregnancy/
-                      your-checkup-before-pregnancy.aspx">
+                      your-checkup-before-pregnancy.aspx"
+                      target="blank">
                       Your checkup before pregnancy
                     </a>
                   </li>
@@ -154,27 +157,30 @@ function Home() {
                 <ol>
                   <li>
                     <a
-                      href="https://www.cdc.gov/preconception/planning.html">
+                      href="https://www.cdc.gov/preconception/planning.html"
+                      target="blank">
                       Planning for Pregnancy
                     </a>
                   </li>
                   <li>
                     <a
                       href="https://www.plannedparenthood.org/
-                      learn/pregnancy/pre-pregnancy-health">
+                      learn/pregnancy/pre-pregnancy-health"
+                      target="blank">
                       How do I plan for a pregnancy?
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://www.parents.com/getting-pregnant/pre-pregnancy-health/">
+                      href="https://www.parents.com/getting-pregnant/pre-pregnancy-health/"
+                      target="blank">
                       Pre-Pregnancy Health
                     </a>
                   </li>
                   <li>
                     <a
                       href="https://www.womenshealth.gov/pregnancy/you-get-pregnant/
-                      preconception-health">
+                      preconception-health" target="blank">
                       Preconception health
                     </a>
                   </li>
