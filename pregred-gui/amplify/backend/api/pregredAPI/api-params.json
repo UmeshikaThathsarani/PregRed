@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/todos",
+            "lambdaFunction": "predictionFunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/todos"
+        }
+    ],
+    "resourceName": "pregredAPI",
+    "apiName": "pregredAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "predictionFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifydf199d6e2a8c4-staging-85555-authRole",
+        "unAuthRoleName": "amplify-amplifydf199d6e2a8c4-staging-85555-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "predictionFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
