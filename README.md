@@ -1,2 +1,2 @@
 # PregRed
-Readiness Checker for Healthy Delivery
+Readiness Checker for Healthy Delivery - GUI
