@@ -31,7 +31,7 @@ export const PAGES = [
   {
     id: 3,
     name: 'BMI Calculator',
-    path: '/',
+    path: '/calculator',
     icon: ICONS.calc,
   },
   {
