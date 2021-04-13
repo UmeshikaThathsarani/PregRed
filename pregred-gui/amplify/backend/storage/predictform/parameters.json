@@ -1,0 +1,5 @@
+{
+    "tableName": "predictform",
+    "partitionKeyName": "id",
+    "partitionKeyType": "S"
+}
