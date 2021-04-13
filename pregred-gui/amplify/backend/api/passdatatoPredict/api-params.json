@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/predictdata",
+            "lambdaFunction": "predictlambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/predictdata"
+        }
+    ],
+    "resourceName": "passdatatoPredict",
+    "apiName": "passdatatoPredict",
+    "functionArns": [
+        {
+            "lambdaFunction": "predictlambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-senddatatodb-dev-153543-authRole",
+        "unAuthRoleName": "amplify-senddatatodb-dev-153543-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "predictlambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
