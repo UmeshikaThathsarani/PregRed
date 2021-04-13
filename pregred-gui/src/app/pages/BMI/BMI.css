@@ -1,0 +1,42 @@
+.container-bmi
+{
+  display: flex;
+  justify-content: space-around;
+}
+.container-bmi-div1{
+  width: 50%;
+  height: 712px;
+  background-image: linear-gradient(rgb(241, 163, 241),rgb(136, 196, 245));
+}
+.container-bmi-div2{
+  width: 50%;
+  margin-left: 8px;
+  height: 712px;
+}
+.bmi-bg-image{
+  background-image: url("https://images.pexels.com/photos/5427306/pexels-photo-5427306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  min-width: 100%;
+  min-height:100%;
+  background-position: center;
+}
+.bmi-topic-para{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+input{
+  width: 40%;
+  padding-left: 10%;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.cal-div{
+  margin-top: 10%;
+  margin-left: 30px;
+}
+.cal-table-div{
+  margin-top: 15%;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}

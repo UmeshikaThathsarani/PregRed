@@ -4,6 +4,7 @@ import { Layout } from 'antd';
 
 import Home from './pages/home/Home';
 import Prediction from './pages/prediction/Prediction';
+import BMI from './pages/BMI/BMI';
 
 import AppHeader from './components/app-header/AppHeader';
 import AppNavBar from './components/app-nav-bar/AppNavBar';
@@ -27,7 +28,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/prediction" component={Prediction} />
-              <Route component={Home} />
+              <Route component={BMI} />
             </Switch>
           </Content>
           <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
