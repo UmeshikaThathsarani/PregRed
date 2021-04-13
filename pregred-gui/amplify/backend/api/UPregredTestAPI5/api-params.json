@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/uPredictionTestPath5",
+            "lambdaFunction": "UPregredTestFunction5",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/uPredictionTestPath5"
+        }
+    ],
+    "resourceName": "UPregredTestAPI5",
+    "apiName": "UPregredTestAPI5",
+    "functionArns": [
+        {
+            "lambdaFunction": "UPregredTestFunction5"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplify06020f0975c04-staging-141208-authRole",
+        "unAuthRoleName": "amplify-amplify06020f0975c04-staging-141208-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "UPregredTestFunction5",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
