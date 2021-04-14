@@ -1,6 +1,10 @@
 import React from 'react';
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
 // import Popup from "reactjs-popup";
 import './Prediction.css';
+
+Amplify.configure(config);
 
 function Alert() {
   alert("Hello")
@@ -14,7 +18,7 @@ function Alert() {
     
      <form onSubmit={Alert}>
      <div className="container-predict-header">
-           <h2> Prediction Form </h2>
+           <h2> Prediction Form1 </h2>
    </div>
        <div className="container-predict-form">
          <h3>Please fill the following information.</h3>
