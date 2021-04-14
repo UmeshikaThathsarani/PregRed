@@ -15,7 +15,7 @@
       "function": {
         "UPregredTestFunction5": {
           "deploymentBucketName": "amplify-amplify06020f0975c04-staging-141208-deployment",
-          "s3Key": "amplify-builds/UPregredTestFunction5-49575137776c7a744130-build.zip"
+          "s3Key": "amplify-builds/UPregredTestFunction5-2f6a742b46665363634c-build.zip"
         }
       }
     }
