@@ -5,6 +5,7 @@ import './Prediction.css';
 function Alert() {
   alert("Hello")
 }
+
   function Prediction() {
     
      return(
