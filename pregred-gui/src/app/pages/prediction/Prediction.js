@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import Popup from "reactjs-popup";
 import './Prediction.css';
 // import Amplify from "aws-amplify";
 // import { API } from "aws-amplify";
 // import awsExports from "./aws-exports";
 // Amplify.configure(awsExports);
+import { API } from 'aws-amplify'
 
 function Alert() {
   alert("Hello")
 }
 function Prediction() {
-
+  const [predictit, setPredictit] = useState(null)
+  async function fetchPredict() {
+    const apiData = await API.get('passdatatoPredict', '/predictdata')
+    setPredictit(apiData.message)
+  }
+  useEffect(() => {
+    fetchPredict()
+  }, [])
   return (
 
     <div className="container-prediction">
@@ -55,7 +63,7 @@ function Prediction() {
             </div></div>
           <div className="container-predict-submit">
 
-            <input type="submit" value="Submit" />
+            <input type="submit" value={predictit} />
           </div>
         </form>
       </div>

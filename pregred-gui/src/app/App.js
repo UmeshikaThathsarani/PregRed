@@ -12,9 +12,20 @@ import 'antd/dist/antd.css';
 import './App.css';
 import AppFooter from './components/app-footer/AppFooter';
 
+// import {API} from 'aws-amplify'
+
 const { Content,Sider } = Layout;
 
 function App() {
+  // const [predictit, setPredictit] = useState(null)
+  // async function fetchPredict(){
+  //   const apiData = await API.get('passdatatoPredict', '/predictdata')
+  //   setPredictit(apiData.message)
+
+  // }
+  // useEffect(() => {
+  //   fetchPredict()
+  // }, [])
   return (
     <Router>
       <Layout style={{ minHeight: '100vh' }}>
