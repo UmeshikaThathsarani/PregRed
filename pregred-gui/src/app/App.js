@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 
@@ -11,6 +11,8 @@ import AppNavBar from './components/app-nav-bar/AppNavBar';
 import 'antd/dist/antd.css';
 import './App.css';
 import AppFooter from './components/app-footer/AppFooter';
+
+import { API } from 'aws-amplify'
 
 const { Content,Sider } = Layout;
 

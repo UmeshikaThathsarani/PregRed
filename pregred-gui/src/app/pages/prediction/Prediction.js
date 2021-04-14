@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // import Popup from "reactjs-popup";
 import './Prediction.css';
 
@@ -8,6 +8,16 @@ function Alert() {
 
   function Prediction() {
     
+    const [pred, setPred] = useState(null)
+    async function fetchPred() {
+      const apiData = await API.get('UPregredTestAPI5, '/UPregredTestFunction5-staging)
+      setPred(apiData.message)
+    }
+
+    useEffect(()=> {
+      fetchPred()
+    }, [])
+
      return(
      
     <div className="container-prediction">
@@ -16,7 +26,7 @@ function Alert() {
      <form onSubmit={Alert}>
      <div className="container-predict-header">
            <h2> Prediction Form1 </h2>
-   </div>
+     </div>
        <div className="container-predict-form">
          <h3>Please fill the following information.</h3>
       <div className="container-predict-div-left">
@@ -54,6 +64,7 @@ function Alert() {
       
       <input type="submit" value="Submit" />
       </div>
+      <div>{pred}</div>
       </form>
       </div>
 
