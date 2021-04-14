@@ -1,10 +1,10 @@
 import React from 'react';
-// import Amplify from 'aws-amplify';
-// import config from './aws-exports';
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
 // import Popup from "reactjs-popup";
 import './Prediction.css';
 
-// Amplify.configure(config);
+Amplify.configure(config);
 
 function Alert() {
   alert("Hello")
