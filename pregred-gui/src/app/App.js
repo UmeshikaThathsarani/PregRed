@@ -1,6 +1,4 @@
 import React from 'react';
-import Amplify from 'aws-amplify';
-import config from './aws-exports';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 
@@ -13,8 +11,6 @@ import AppNavBar from './components/app-nav-bar/AppNavBar';
 import 'antd/dist/antd.css';
 import './App.css';
 import AppFooter from './components/app-footer/AppFooter';
-
-Amplify.configure(config);
 
 const { Content,Sider } = Layout;
 
