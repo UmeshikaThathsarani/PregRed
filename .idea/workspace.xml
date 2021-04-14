@@ -48,9 +48,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a9c2758-08a8-4fd6-85e3-24139fe8b056" name="Default Changelist" comment="Add aws-exports.js file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3a9c2758-08a8-4fd6-85e3-24139fe8b056" name="Default Changelist" comment="Add aws-exports.js file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615600340361</updated>
       <workItem from="1618381863627" duration="207000" />
-      <workItem from="1618382100701" duration="926000" />
+      <workItem from="1618382100701" duration="1679000" />
     </task>
     <task id="LOCAL-00001" summary="Add aws-exports.js file">
       <created>1618382483329</created>
