@@ -7,6 +7,22 @@ import { API } from 'aws-amplify'
 function Alert() {
   alert("Hello")
 }
+
+async function sendtoPredict() {
+  const data = {
+    body: {
+      age: age.name,
+      gravidity: gravidity.name
+
+    }
+  };
+  console.log(data);
+  const apiData = await API.post("sendtoPredict", "/sendtp")
+
+}
+
+
+
 function Prediction() {
   const [predictit, setPredictit] = useState(null)
   async function fetchPredict() {
@@ -21,7 +37,7 @@ function Prediction() {
     <div className="container-prediction">
       <div className="container-predict-input">
 
-        <form onSubmit={Alert}>
+        <form onSubmit={sendtoPredict}>
           <div className="container-predict-header">
             <h2> Prediction Form </h2>
           </div>
