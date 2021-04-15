@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/lmtfe",
+            "lambdaFunction": "chrlamfeFunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/lmtfe"
+        }
+    ],
+    "resourceName": "chrlamfeAPI",
+    "apiName": "chrlamfeAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "chrlamfeFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-pregredchiran2-dev-153824-authRole",
+        "unAuthRoleName": "amplify-pregredchiran2-dev-153824-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "chrlamfeFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
