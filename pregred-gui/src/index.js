@@ -1,7 +1,17 @@
 import React from 'react';
 import Amplify from "aws-amplify";
-import awsExports from "./aws-exports";
-Amplify.configure(awsExports);
+
+Amplify.configure({
+  API: {
+    endpoints: [
+        {
+            name: "UTest7API",
+            endpoint: "https://t6e2noaphk.execute-api.ap-southeast-1.amazonaws.com/dev",
+            region: "ap-southeast-1"
+        }
+    ]
+}
+});
 import ReactDOM from 'react-dom';
 
 import App from './app/App';
