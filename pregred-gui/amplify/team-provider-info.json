@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pregredgui-dev-75458-authRole",
+      "UnauthRoleArn": "arn:aws:iam::886945596961:role/amplify-pregredgui-dev-75458-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::886945596961:role/amplify-pregredgui-dev-75458-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-pregredgui-dev-75458-deployment",
+      "UnauthRoleName": "amplify-pregredgui-dev-75458-unauthRole",
+      "StackName": "amplify-pregredgui-dev-75458",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:886945596961:stack/amplify-pregredgui-dev-75458/c95c4be0-9d91-11eb-94a3-06471c3627e4",
+      "AmplifyAppId": "dcil4u9as537y"
+    },
+    "categories": {
+      "function": {
+        "predict7Function": {
+          "deploymentBucketName": "amplify-pregredgui-dev-75458-deployment",
+          "s3Key": "amplify-builds/predict7Function-6745377a32725231335a-build.zip"
+        }
+      }
+    }
+  }
+}

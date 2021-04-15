@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/predict7",
+            "lambdaFunction": "predict7Function",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/predict7"
+        }
+    ],
+    "resourceName": "UTest7API",
+    "apiName": "UTest7API",
+    "functionArns": [
+        {
+            "lambdaFunction": "predict7Function"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-pregredgui-dev-75458-authRole",
+        "unAuthRoleName": "amplify-pregredgui-dev-75458-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "predict7Function",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
