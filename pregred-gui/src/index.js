@@ -1,6 +1,6 @@
 import React from 'react';
-import Amplify, {API} from "aws-amplify";
-//import config from "./aws-exports";
+import Amplify from "aws-amplify";
+// import config from "./aws-exports";
 
 import ReactDOM from 'react-dom';
 
@@ -8,7 +8,7 @@ import App from './app/App';
 
 import './index.css';
 
-//Amplify.configure(config);
+// Amplify.configure(config);
 Amplify.configure({
   API: {
     endpoints: [
