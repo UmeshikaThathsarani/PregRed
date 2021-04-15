@@ -8,18 +8,18 @@ function Alert() {
   alert("Hello")
 }
 
-async function sendtoPredict() {
-  const data = {
-    body: {
-      age: age.name,
-      gravidity: gravidity.name
+// async function sendtoPredict() {
+//   const data = {
+//     body: {
+//       age: age.name,
+//       gravidity: gravidity.name
 
-    }
-  };
-  console.log(data);
-  const apiData = await API.post("sendtoPredict", "/sendtp")
+//     }
+//   };
+//   console.log(data);
+//   const apiData = await API.post("sendtoPredict", "/sendtp")
 
-}
+// }
 
 
 
@@ -37,7 +37,7 @@ function Prediction() {
     <div className="container-prediction">
       <div className="container-predict-input">
 
-        <form onSubmit={sendtoPredict}>
+        <form onSubmit={Alert}>
           <div className="container-predict-header">
             <h2> Prediction Form </h2>
           </div>
