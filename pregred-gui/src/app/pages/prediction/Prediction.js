@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import Popup from "reactjs-popup";
 import './Prediction.css';
-// import Amplify from "aws-amplify";
-// import { API } from "aws-amplify";
-// import awsExports from "./aws-exports";
-// Amplify.configure(awsExports);
+
 import { API } from 'aws-amplify'
 
 function Alert() {
@@ -61,10 +58,12 @@ function Prediction() {
           &nbsp;&nbsp;<input type="radio" id="yes5" name="yes_no5" value="Yes5" />Yes
           &nbsp;&nbsp; <input type="radio" id="no5" name="yes_no5" value="No5" />No<br />
             </div></div>
-          <div className="container-predict-submit">
 
-            <input type="submit" value={predictit} />
+          <div className="container-predict-submit">
+            <input type="submit" value="Submit" />
+            <h3>{predictit}</h3>
           </div>
+
         </form>
       </div>
 
