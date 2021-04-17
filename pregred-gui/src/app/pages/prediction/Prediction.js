@@ -2,6 +2,8 @@ import React from 'react';
 // import Popup from "reactjs-popup";
 import './Prediction.css';
 
+import Amplify from "aws-amplify";
+
 function Alert() {
   alert("Hello")
 }
