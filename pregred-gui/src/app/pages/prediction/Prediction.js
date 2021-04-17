@@ -108,6 +108,7 @@ async function inputs() {
       CD: formState.CD,
       TD: formState.TD
     }
+    
   };
 
   console.log(data);
@@ -121,10 +122,11 @@ async function inputs() {
 
 function updateFormState(key, value) {
   formState[key] = value;
+  console.log(data)
 }
 
 function Prediction() {
-
+console.log(data)
   return (
     <div className="container-prediction">
       <div className="container-predict-input">
