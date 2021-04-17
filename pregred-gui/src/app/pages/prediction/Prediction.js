@@ -112,6 +112,7 @@ async function inputs() {
   };
 
   console.log(data);
+  console.log("this ihsg",formState);
   const apiData = await API.post('chrlamfeAPI', '/lmtfe', data);
   console.log({ apiData });
   alert(inputs);
