@@ -113,7 +113,8 @@ async function inputs() {
   console.log(data);
   const apiData = await API.post('chrlamfeAPI', '/lmtfe', data);
   console.log({ apiData });
-  alert(data);
+  // alert(data);
+  // console.log(data)
 }
 
 
