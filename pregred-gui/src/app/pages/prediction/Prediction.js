@@ -114,7 +114,7 @@ async function inputs() {
   console.log(data);
   const apiData = await API.post('chrlamfeAPI', '/lmtfe', data);
   console.log({ apiData });
-  // alert(data);
+  alert(inputs);
   // console.log(data)
 }
 
@@ -122,11 +122,10 @@ async function inputs() {
 
 function updateFormState(key, value) {
   formState[key] = value;
-  console.log(data)
 }
 
 function Prediction() {
-console.log(data)
+
   return (
     <div className="container-prediction">
       <div className="container-predict-input">
