@@ -78,8 +78,8 @@ import './Prediction.css';
 
 import { Button } from 'react-bootstrap';
 
-import Amplify from "aws-amplify";
-import { API } from 'aws-amplify';
+import Amplify, {API} from "aws-amplify";
+// import { API } from 'aws-amplify';
 
 import awsExports from "./aws-exports";
 
