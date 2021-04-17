@@ -82,7 +82,14 @@ import Amplify from "aws-amplify";
 import { API } from 'aws-amplify';
 
 import awsExports from "./aws-exports";
+
 Amplify.configure(awsExports);
+
+const formState = {
+  age: '', gravidity: '',
+  BP: '', height: '', BMI: '', BS: '', Hb: '', Consanguinity: '',
+  RI: '', FA: '', SF: '', CD: '', TD: ''
+};
 
 async function inputs() {
   const data = {
@@ -109,11 +116,7 @@ async function inputs() {
   alert('Mail sent');
 }
 
-const formState = {
-  age: '', gravidity: '',
-  BP: '', height: '', BMI: '', BS: '', Hb: '', Consanguinity: '',
-  RI: '', FA: '', SF: '', CD: '', TD: ''
-};
+
 
 function updateFormState(key, value) {
   formState[key] = value;
