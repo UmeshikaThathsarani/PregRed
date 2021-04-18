@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/snddata",
+            "lambdaFunction": "pythonlambdatestA",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/snddata"
+        }
+    ],
+    "resourceName": "apitestA",
+    "apiName": "apitestA",
+    "functionArns": [
+        {
+            "lambdaFunction": "pythonlambdatestA"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-pregredchiran2-dev-153824-authRole",
+        "unAuthRoleName": "amplify-pregredchiran2-dev-153824-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "pythonlambdatestA",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
