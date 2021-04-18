@@ -15,7 +15,7 @@
       "function": {
         "chrlamfeFunction": {
           "deploymentBucketName": "amplify-pregredchiran2-dev-153824-deployment",
-          "s3Key": "amplify-builds/chrlamfeFunction-6e4738457933566b3052-build.zip"
+          "s3Key": "amplify-builds/chrlamfeFunction-6d687947516866434341-build.zip"
         },
         "pythonlambdatestA": {
           "deploymentBucketName": "amplify-pregredchiran2-dev-153824-deployment",

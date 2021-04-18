@@ -78,7 +78,7 @@ import './Prediction.css';
 
 import { Button } from 'react-bootstrap';
 
-import Amplify, {API} from "aws-amplify";
+// import Amplify, {API} from "aws-amplify";
 // import { API } from 'aws-amplify';
 
 import awsExports from "./aws-exports";
@@ -127,7 +127,7 @@ async function inputs() {
   // const apiData = await API.post('chrlamfeAPI', '/lmtfe', data);
   const res = await fetch('https://saue4gu7v4.execute-api.ap-southeast-1.amazonaws.com/dev/lmtfe')
   console.log(res);
-  console.log({ apiData });
+  // console.log({ apiData });
   alert(inputs);
   // console.log(data)
 }
