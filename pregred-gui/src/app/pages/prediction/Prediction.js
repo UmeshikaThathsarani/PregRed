@@ -111,14 +111,16 @@ async function inputs() {
     }
     
   };
-  const headers = {
-    "Access-Control-Allow-Origin": "*", // Required for CORS support to work
-    "Access-Control-Allow-Credentials": true // Required for cookies, authorization headers with HTTPS
-  }
-  const myInit = { // OPTIONAL
-    body: data, // replace this with attributes you need
-    headers: headers, // OPTIONAL
-};
+  // const headers = {
+  //   "Access-Control-Allow-Origin": "*", 
+  // Required for CORS support to work
+  //   "Access-Control-Allow-Credentials": true 
+  //   // Required for cookies, authorization headers with HTTPS
+  // }
+  // const myInit = { // OPTIONAL
+  //   body: data, // replace this with attributes you need
+  //   headers: headers, // OPTIONAL
+
 
   console.log(data);
   // console.log("this ihsg",formState);
