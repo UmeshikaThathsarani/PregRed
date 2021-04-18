@@ -30,7 +30,7 @@ def lambda_handler (event, context):
 
     return{
         'statusCode': 200,
-        'body':json.dumps(age:12)
+        'body':json.dumps({"age": "12"})
     }
     # transactionID = event['queryStringParameters']['transactionID']
 
