@@ -1,0 +1,29 @@
+{
+    "staging": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-pregredgui2-staging-184526-authRole",
+            "UnauthRoleArn": "arn:aws:iam::886945596961:role/amplify-pregredgui2-staging-184526-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::886945596961:role/amplify-pregredgui2-staging-184526-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-pregredgui2-staging-184526-deployment",
+            "UnauthRoleName": "amplify-pregredgui2-staging-184526-unauthRole",
+            "StackName": "amplify-pregredgui2-staging-184526",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:886945596961:stack/amplify-pregredgui2-staging-184526/279bbf20-a048-11eb-a569-06c012599cae",
+            "AmplifyAppId": "d3llqy3nkumuxa"
+        },
+        "categories": {
+            "function": {
+                "Predict8Function": {
+                    "deploymentBucketName": "amplify-pregredgui2-staging-184526-deployment",
+                    "s3Key": "amplify-builds/Predict8Function-50576634737768636f59-build.zip"
+                }
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d3llqy3nkumuxa",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}

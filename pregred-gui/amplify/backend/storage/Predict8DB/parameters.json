@@ -1,0 +1,5 @@
+{
+    "tableName": "Predict8Table",
+    "partitionKeyName": "id",
+    "partitionKeyType": "S"
+}

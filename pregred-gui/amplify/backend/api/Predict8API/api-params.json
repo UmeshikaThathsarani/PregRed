@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/predict8",
+            "lambdaFunction": "Predict8Function",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/predict8"
+        }
+    ],
+    "resourceName": "Predict8API",
+    "apiName": "Predict8API",
+    "functionArns": [
+        {
+            "lambdaFunction": "Predict8Function"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-pregredgui2-staging-184526-authRole",
+        "unAuthRoleName": "amplify-pregredgui2-staging-184526-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "Predict8Function",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
