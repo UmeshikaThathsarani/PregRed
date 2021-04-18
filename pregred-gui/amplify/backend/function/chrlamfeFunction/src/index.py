@@ -1,5 +1,20 @@
 import json
 
+
+def handler(event, context):
+    firstNum = 10
+    secNum = 20
+    re = firstNum + secNum
+
+    # body_dec = base64.b64decode(event['body'])
+    body = json.loads(event['body'])
+    
+
+    return{
+        'statusCode': 200,
+        'body':json.dumps(body['test'])
+    }
+    
 # import pandas as pd
 # import tensorflow as tf
 # from tensorflow import keras
@@ -23,15 +38,6 @@ import json
 #       'body': json.dumps('Hello from your new Amplify Python lambda!')
 #   }
 
-def lambda_handler (event, context):
-    firstNum = 10
-    secNum = 20
-    re = firstNum + secNum
-
-    return{
-        'statusCode': 200,
-        'body':json.dumps({"age": "12"})
-    }
     # transactionID = event['queryStringParameters']['transactionID']
 
     # transactionResponse['transactionID'] = transactionID

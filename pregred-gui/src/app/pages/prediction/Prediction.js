@@ -124,7 +124,9 @@ async function inputs() {
 
   console.log(data);
   // console.log("this ihsg",formState);
-  const apiData = await API.post('chrlamfeAPI', '/lmtfe', data);
+  // const apiData = await API.post('chrlamfeAPI', '/lmtfe', data);
+  const res = await fetch('https://saue4gu7v4.execute-api.ap-southeast-1.amazonaws.com/dev/lmtfe')
+  console.log(res);
   console.log({ apiData });
   alert(inputs);
   // console.log(data)
