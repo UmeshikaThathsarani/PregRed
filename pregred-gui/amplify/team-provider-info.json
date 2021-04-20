@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pregredchiran3-dev-230732-authRole",
+      "UnauthRoleArn": "arn:aws:iam::886945596961:role/amplify-pregredchiran3-dev-230732-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::886945596961:role/amplify-pregredchiran3-dev-230732-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-pregredchiran3-dev-230732-deployment",
+      "UnauthRoleName": "amplify-pregredchiran3-dev-230732-unauthRole",
+      "StackName": "amplify-pregredchiran3-dev-230732",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:886945596961:stack/amplify-pregredchiran3-dev-230732/eeb637f0-a135-11eb-a843-06f1487f6a64",
+      "AmplifyAppId": "d86rcftwi1urc"
+    },
+    "categories": {
+      "function": {
+        "chrlamfeFunctionTwo": {
+          "deploymentBucketName": "amplify-pregredchiran3-dev-230732-deployment",
+          "s3Key": "amplify-builds/chrlamfeFunctionTwo-39527039545a4e6d5878-build.zip"
+        }
+      }
+    }
+  }
+}

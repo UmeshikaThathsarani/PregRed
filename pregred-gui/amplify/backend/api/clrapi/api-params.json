@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/clrformdt",
+            "lambdaFunction": "chrlamfeFunctionTwo",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/clrformdt"
+        }
+    ],
+    "resourceName": "clrapi",
+    "apiName": "clrapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "chrlamfeFunctionTwo"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-pregredchiran3-dev-230732-authRole",
+        "unAuthRoleName": "amplify-pregredchiran3-dev-230732-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "chrlamfeFunctionTwo",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
