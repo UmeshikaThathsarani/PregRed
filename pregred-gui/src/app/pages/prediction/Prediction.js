@@ -36,7 +36,7 @@ import axios from 'axios';
       console.log(dataSet)
 
       axios
-      .post('https://saue4gu7v4.execute-api.ap-southeast-1.amazonaws.com/dev',dataSet)
+      .post('https://saue4gu7v4.execute-api.ap-southeast-1.amazonaws.com/dev/clrformdt',dataSet)
       .then(res => console.log(res.data));
     }
 
