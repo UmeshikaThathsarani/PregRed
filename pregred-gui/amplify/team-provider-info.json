@@ -15,7 +15,7 @@
       "function": {
         "chrlamfeFunctionTwo": {
           "deploymentBucketName": "amplify-pregredchiran3-dev-230732-deployment",
-          "s3Key": "amplify-builds/chrlamfeFunctionTwo-39527039545a4e6d5878-build.zip"
+          "s3Key": "amplify-builds/chrlamfeFunctionTwo-494e70632b7078324849-build.zip"
         }
       }
     }
