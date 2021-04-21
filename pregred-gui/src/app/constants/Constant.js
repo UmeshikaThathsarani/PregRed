@@ -37,7 +37,7 @@ export const PAGES = [
   {
     id: 4,
     name: 'Healthcare Center',
-    path: '/',
+    path: '/healthcare',
     icon: ICONS.healthcare,
   },
   {
