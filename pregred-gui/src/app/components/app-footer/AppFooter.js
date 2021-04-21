@@ -13,22 +13,21 @@ import {
 function AppFooter() {
     return(
       <div className="footer-container">
-        <div className="f-text">
-          <ul className="dot">
-            <li>About Us: <a href="www.pregred.com"> www.pregred.com </a> </li>
-            <li>Contact Us: 0768660203</li>
-          </ul>
-          <div className="social">
-            <p >Social  follows</p>
-            <p><TwitterOutlined/>  <YoutubeOutlined/>  <InstagramOutlined/>  <FacebookOutlined/></p>
-          </div>
-          <div className="f-right">
-            <p > Help & Support</p>
-          </div>
+        <div className="about-us">
+          <p>We are a group of students of IIT, Sri Lanka.
+            Making this webpage for one of our project module.</p>
         </div>
-        <p className='b-text'>&copy;PregRed</p>
+        <div className="mobile">
+          <p>Contact on : (+94) 76 86 60 203</p>
+        </div>
+        <div className="social">
+          <p>Follow on : <TwitterOutlined/>  <YoutubeOutlined/>
+          <InstagramOutlined/>  <FacebookOutlined/></p>
+        </div>
+        <div className="copyright-text">
+          <p>Copyright &copy; 2021 TeamX, Sri Lanka. All Rights Reserved</p>
+        </div>
       </div>
-
     );
 }
 

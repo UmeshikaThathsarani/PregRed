@@ -1,8 +1,8 @@
 .logo {
-  height: 80px;
+  height: 122px;
   width: 180px;
   margin: 16px;
-  background-image:url("../app/img/pregredLogo2.jpg");
+  background-image: url('../app/assets/images/pregredLogo.jpg');
 }
 
 .content-container {
