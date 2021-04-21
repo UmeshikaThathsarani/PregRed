@@ -1,5 +1,8 @@
 // import { null } from 'check-types';
 import React, { Component } from 'react';
+
+
+
 // import Popup from "reactjs-popup";
 import './Prediction.css';
 import axios from 'axios';
