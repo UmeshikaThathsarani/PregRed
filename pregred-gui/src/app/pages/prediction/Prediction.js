@@ -39,7 +39,7 @@ import axios from 'axios';
       console.log(dataSet)
 
       axios
-      .post('https://saue4gu7v4.execute-api.ap-southeast-1.amazonaws.com/dev/clrformdt/post',
+      .post('https://dqwncwspu6.execute-api.ap-southeast-1.amazonaws.com/dev/userinputs',
       dataSet)
       .then(res => console.log(res.data));
     }
