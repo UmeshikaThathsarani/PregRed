@@ -4,6 +4,21 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "chrlamfeFunctionthree": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "clrapi",
+          "attributes": [
+            "ApiName",
+            "ApiId"
+          ]
+        }
+      ]
     }
   },
   "api": {
