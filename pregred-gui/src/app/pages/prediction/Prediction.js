@@ -41,7 +41,8 @@ import axios from 'axios';
       axios
       .post('https://dqwncwspu6.execute-api.ap-southeast-1.amazonaws.com/dev/userinputs',
       dataSet)
-      .then(res => console.log(res.data));
+      // .then(res => console.log(res.data));
+      .then(res => console.log("Somas"));
     }
 
     handleInputChange = (event) =>{
