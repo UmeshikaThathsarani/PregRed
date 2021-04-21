@@ -5,6 +5,7 @@ import { Layout } from 'antd';
 import Home from './pages/home/Home';
 import Prediction from './pages/prediction/Prediction';
 import BMI from './pages/BMI/BMI';
+import Healthcare from './pages/Healthcare/Healthcare';
 
 import AppHeader from './components/app-header/AppHeader';
 import AppNavBar from './components/app-nav-bar/AppNavBar';
@@ -29,7 +30,8 @@ function App() {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/prediction" component={Prediction} />
-              <Route component={BMI} />
+              <Route path="/calculator" component={BMI} />
+              <Route path="/healthcare" component={Healthcare} />
             </Switch>
           </Content>
           <AppFooter/>
