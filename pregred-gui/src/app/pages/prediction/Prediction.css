@@ -22,7 +22,7 @@
   width: 50%;
   height: 500px;
   float:left;
-  padding-right: 100px;
+  padding: 2%;
 }
 .pred-input-left{
   margin-top: 10%;
@@ -32,14 +32,26 @@
   width: 50%;
   height: 500px;
   float:right;
-  padding-right: 50px;
+  /* padding-right: 50px; */
+  padding: 2%;
 }
 .container-predict-submit{
-  padding-left: 50px;
+  padding-left: 40%;
   padding-bottom: 20px;
+  padding-right: 30%;
+
 }
 .container-predict-output{
   background-Image: url("https://images.pexels.com/photos/3965562/pexels-photo-3965562.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   width:50%;
   background-position: center;
+}
+.radio-divs{
+  padding-left: 20%;
+  margin-bottom: 5%;
+}
+.input-divs{
+  padding-left: 0px;
+  margin-bottom: 2%;
+  border-left: 0px;
 }
