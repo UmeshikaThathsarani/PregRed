@@ -1,12 +1,10 @@
 // import { null } from 'check-types';
 import React, { Component } from 'react';
-// import Popup from "reactjs-popup";
 import './Prediction.css';
 import axios from 'axios';
 
-// function Alert() {
-//   alert("Hello")
-// }
+import { Radio } from 'antd';
+
   class Prediction extends Component {
 
     constructor(props){
@@ -29,15 +27,17 @@ import axios from 'axios';
 
     }
 
+
     handleSubmit = (event) =>{
       event.preventDefault()
-      const dataSet = this.state
-      console.log("final age is",dataSet )
-      console.log(dataSet)
+      const dataSet = this.state;
+      console.log(dataSet);
 
       axios
-      .post('https://saue4gu7v4.execute-api.ap-southeast-1.amazonaws.com/dev',dataSet)
-      .then(res => console.log(res.data));
+      .post('https://dqwncwspu6.execute-api.ap-southeast-1.amazonaws.com/dev/userinputs',dataSet)
+      .then(
+        res => alert(res.data)
+        );
     }
 
     handleInputChange = (event) =>{
@@ -136,19 +136,9 @@ import axios from 'axios';
 
     render(){
 
-      const {age} = this.state
-      const {gravidity} = this.state
-      const {bldPre} = this.state
-      const {height} = this.state
-      const {bmi} = this.state
-      const {bldSug} = this.state
-      const {hemog} = this.state
-      const {consngity} = this.state
-      const {rubella} = this.state
-      const {folic} = this.state
-      const {subfer} = this.state
-      const {cardic} = this.state
-      const {tyroid} = this.state
+      const {age , gravidity , bldPre , height , bmi , bldSug , hemog , consngity ,
+        rubella , folic , subfer , cardic , tyroid
+      } = this.state
 
       return(
 
@@ -173,69 +163,136 @@ import axios from 'axios';
                         {console.log(tyroid)}
                   </div>
 
-                  <div className="container-predict-form">
-                    <h3>Please fill the following information.</h3>
-                  <div className="container-predict-div-left">
-                    <h3>1. Age <input type="number" id="age" name="age"
-                    onChange={this.handleInputChange} /></h3>
-                    <h3>2. Gravidity <input type="number" id="gravidity" name="gravidity"
-                    onChange={this.handleInputChange2}/></h3>
-                    <h3>3. Blood Pressure <input type="number" id="bldPre" name="bldPre"
-                    onChange={this.handleInputChange3}/></h3>
-                    <h3>4. Height (Enter height in cm)<input type="number"
-                    id="height" name="height"onChange={this.handleInputChange4}/></h3>
-                    <h3>5. BMI<input type="number" id="bmi" name="bmi"
-                    onChange={this.handleInputChange5}/></h3>
-                    <h3>6. Blood Sugar <input type="number" id="bldSug" name="bldSug"
-                    onChange={this.handleInputChange6}/></h3>
-                    <h3>7. Haemoglobin <input type="number" id="hemog" name="hemog"
-                    onChange={this.handleInputChange7}/></h3>
-                  </div>
+                    <div className="container-predict-form">
+                      <h3>Please fill the following information.</h3>
 
-
-                  <div className="container-predict-div-right">
-                    <h3>8. Consanguinity </h3>
-                    &nbsp;&nbsp;<input type="radio" id="consngity_yes" name="consngity" value={1}
-                    onChange={this.handleInputChange8}/>Yes
-                    &nbsp;&nbsp;<input type="radio" id="consngity_no" name="consngity" value={0}
-                    onChange={this.handleInputChange8} />No<br/>
-
-                    <h3>9. Rubella Immunization </h3>
-                    &nbsp;&nbsp;<input type="radio" id="rubella_yes" name="rubella" value={1}
-                    onChange={this.handleInputChange9}/>Yes
-                    &nbsp;&nbsp;<input type="radio" id="rubella_no" name="rubella" value={0}
-                    onChange={this.handleInputChange9}/>No<br/>
-
-                    <h3>10. Folic Acid </h3>
-                    &nbsp;&nbsp;<input type="radio" id="folic_yes" name="folic" value={1}
-                    onChange={this.handleInputChange10}/>Yes
-                    &nbsp;&nbsp;<input type="radio" id="folic_no" name="folic" value={0}
-                    onChange={this.handleInputChange10}/>No<br/>
-
-                    <h3>11. Subfertility </h3>
-                    &nbsp;&nbsp;<input type="radio" id="subfer_yes" name="subfer" value={1}
-                    onChange={this.handleInputChange11}/>Yes
-                    &nbsp;&nbsp;<input type="radio" id="subfer_no" name="subfer" value={0}
-                    onChange={this.handleInputChange11}/>No<br/>
-
-                    <h3>12. Cardiac Disease </h3>
-                    &nbsp;&nbsp;<input type="radio" id="cardic_yes" name="cardic" value={1}
-                    onChange={this.handleInputChange12}/>Yes
-                    &nbsp;&nbsp; <input type="radio" id="cardic_no" name="cardic" value={0}
-                    onChange={this.handleInputChange12}/>No<br/>
-
-                    <h3>13. Thyroid Disease </h3>
-                    &nbsp;&nbsp;<input type="radio" id="tyroid_yes" name="tyroid" value={1}
-                    onChange={this.handleInputChange13}/>Yes
-                    &nbsp;&nbsp; <input type="radio" id="tyroid_no" name="tyroid" value={0}
-                    onChange={this.handleInputChange13}/>No<br/>
-
+                    <div className="container-predict-div-left">
+                      <div className="input-divs" >
+                        <h3>1. Age
+                          <div>
+                            <input  style={{marginLeft:"2%"}}
+                            type="number" id="age" name="age" onChange={this.handleInputChange} />
+                          </div>
+                        </h3>
                       </div>
-                  </div>
-                  <div className="container-predict-submit">
 
-                  <input type="submit" value="Submit" />
+                      <div className="input-divs" >
+                        <h3>2. Gravidity
+                          <div>
+                            <input style={{marginLeft:"2%"}} type="number"
+                            id="gravidity" name="gravidity" onChange={this.handleInputChange2} />
+                          </div>
+                        </h3>
+                      </div>
+
+                      <div className="input-divs" >
+                        <h3>3. Blood Pressure
+                            <div>
+                                <input style={{marginLeft:"2%"}} type="number"
+                                id="bldPre" name="bldPre" onChange={this.handleInputChange3} />
+                            </div>
+                          </h3>
+                      </div>
+
+                      <div className="input-divs" >
+                        <h3>4. Height (cm)
+                          <div>
+                            <input style={{marginLeft:"2%"}} type="number"
+                            id="height" name="height" onChange={this.handleInputChange4} />
+                          </div>
+                        </h3>
+                      </div>
+
+                      <div className="input-divs" >
+                        <h3>5. BMI
+                          <div>
+                            <input style={{marginLeft:"2%"}} type="number" id="bmi" name="bmi"
+                            onChange={this.handleInputChange5} />
+                          </div>
+                        </h3>
+                      </div>
+
+                      <div className="input-divs" >
+                        <h3>6. Blood Sugar
+                          <div>
+                            <input style={{marginLeft:"2%"}} type="number"
+                            id="bldSug" name="bldSug" onChange={this.handleInputChange6} />
+                          </div>
+                        </h3>
+                      </div>
+
+                      <div className="input-divs" >
+                        <h3>7. Haemoglobin
+                          <div>
+                            <input style={{marginLeft:"2%"}} type="number"
+                            id="hemog" name="hemog" onChange={this.handleInputChange7} />
+                          </div>
+                        </h3>
+                      </div>
+
+                    </div>
+
+
+                    <div className="container-predict-div-right">
+
+                      <h3>8. Consanguinity </h3>
+                      <div className="radio-divs">
+                        <Radio.Group onChange={this.handleInputChange8}>
+                            <Radio id="consngity_yes" value={1} name="consngity">Yes</Radio>
+                            <Radio id="consngity_no" value={0} name="consngity">No</Radio>
+                        </Radio.Group>
+                      </div>
+
+                      <h3>9. Rubella Immunization </h3>
+                      <div className="radio-divs">
+                        <Radio.Group onChange={this.handleInputChange9}>
+                            <Radio id="rubella_yes" value={1} name="rubella">Yes</Radio>
+                            <Radio id="rubella_no" value={0} name="rubella">No</Radio>
+                        </Radio.Group>
+                      </div>
+
+                      <h3>10. Folic Acid </h3>
+                      <div className="radio-divs">
+                        <Radio.Group onChange={this.handleInputChange10}>
+                            <Radio id="folic_yes" value={1} name="folic">Yes</Radio>
+                            <Radio id="folic_no" value={0} name="folic">No</Radio>
+                        </Radio.Group>
+                      </div>
+
+                      <h3>11. Subfertility </h3>
+                      <div className="radio-divs">
+                        <Radio.Group onChange={this.handleInputChange11}>
+                            <Radio id="subfer_yes" value={1} name="subfer">Yes</Radio>
+                            <Radio id="subfer_no" value={0} name="subfer">No</Radio>
+                        </Radio.Group>
+                      </div>
+
+                      <h3>12. Cardiac Disease </h3>
+                      <div className="radio-divs">
+                        <Radio.Group onChange={this.handleInputChange12}>
+                            <Radio id="cardic_yes" value={1} name="cardic">Yes</Radio>
+                            <Radio id="cardic_no" value={0} name="cardic">No</Radio>
+                        </Radio.Group>
+                      </div>
+
+                      <h3>13. Thyroid Disease </h3>
+                      <div className="radio-divs">
+                        <Radio.Group onChange={this.handleInputChange13}>
+                            <Radio id="tyroid_yes" value={1} name="tyroid">Yes</Radio>
+                            <Radio id="tyroid_no" value={0} name="tyroid">No</Radio>
+                        </Radio.Group>
+                      </div>
+
+                    </div>
+
                   </div>
+
+                  <div className="container-predict-submit">
+                    <div >
+                      <input type="submit       " value="Submit" />
+                    </div>
+                  </div>
+
               </form>
           </div>
 
