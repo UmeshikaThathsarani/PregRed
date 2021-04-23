@@ -4,8 +4,8 @@ import { Layout } from 'antd';
 
 import Home from './pages/home/Home';
 import Prediction from './pages/prediction/Prediction';
-import BMI from './pages/bmi/BMI';
-import Healthcare from './pages/healthcare/Healthcare';
+import BMI from './pages/BMI/BMI';
+import Healthcare from './pages/Healthcare/Healthcare';
 
 import AppNavBar from './components/app-nav-bar/AppNavBar';
 
