@@ -8,9 +8,9 @@ class BMI extends PureComponent {
   constructor(props){
     super(props);
     this.state = {
-      height : null,
-      weight : null,
-      bmiCount : null
+      height : '',
+      weight : '',
+      bmiCount : ''
     }
   }
 
@@ -21,18 +21,17 @@ class BMI extends PureComponent {
     if(parseFloat(dataSet.height) > 0 && parseFloat(dataSet.weight) > 0){
       const newHeight = dataSet.height/100;
 
-    const newWeight = dataSet.weight;
-    console.log("new height : ",newHeight);
+      const newWeight = dataSet.weight;
 
-    const bmiValue = newWeight/(newHeight*newHeight);
-    console.log("Bmi value is :", bmiValue);
+      const bmiValue = newWeight/(newHeight*newHeight);
 
-    this.setState({
-      bmiCount : bmiValue
-    })
+      this.setState({
+        bmiCount : bmiValue
+      })
 
     }else{
-      alert("Please enter the correct value !!")
+      // eslint-disable-next-line
+      alert("Please enter the correct values !!")
     }
 
   }
@@ -108,9 +107,6 @@ class BMI extends PureComponent {
     ];
 
     const{height , weight , bmiCount } = this.state
-    console.log(height);
-    console.log(weight);
-    console.log("final bmi count : ",bmiCount);
 
     return(
       <div className="container-bmi">
@@ -120,11 +116,11 @@ class BMI extends PureComponent {
 
               <div className="cal-div">
 
-                  <h3>Enter Your Height (cm) : <input type="number" id="height"
-                  name="height" onChange={this.handleInputHeight}/></h3>
+                  <h3>Enter Your Height (cm) : <input type="number" id="height" value={height}
+                  name="height" onChange={this.handleInputHeight} step="0.01" min="0" /></h3>
 
-                  <h3>Enter Your Weight (Kg) : <input type="number" id="weight"
-                  name="weight" onChange={this.handleInputWeight}/></h3>
+                  <h3>Enter Your Weight (Kg) : <input type="number" id="weight" value={weight}
+                  name="weight" onChange={this.handleInputWeight}  step="0.01" min="0"/></h3>
 
                   <Button type="primary" onClick={this.handleSubmitBmi}>
                             Submit
