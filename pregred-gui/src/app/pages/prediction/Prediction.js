@@ -31,7 +31,6 @@ import { Radio } from 'antd';
     handleSubmit = (event) =>{
       event.preventDefault()
       const dataSet = this.state;
-      console.log(dataSet);
 
       axios
       .post('https://dqwncwspu6.execute-api.ap-southeast-1.amazonaws.com/dev/userinputs',dataSet)
@@ -289,7 +288,7 @@ import { Radio } from 'antd';
 
                   <div className="container-predict-submit">
                     <div >
-                      <input type="submit       " value="Submit" />
+                      <input type="submit" value="Submit" />
                     </div>
                   </div>
 
