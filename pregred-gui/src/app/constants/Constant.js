@@ -3,8 +3,7 @@ import {
   CalculatorFilled,
   HomeFilled,
   MedicineBoxFilled,
-  QuestionCircleFilled,
-  ProfileFilled
+  QuestionCircleFilled
 } from '@ant-design/icons';
 
 export const ICONS = {
@@ -12,7 +11,6 @@ export const ICONS = {
   healthcare: <MedicineBoxFilled />,
   calc: <CalculatorFilled />,
   question: <QuestionCircleFilled />,
-  profile: <ProfileFilled />
 };
 
 export const PAGES = [
@@ -37,13 +35,7 @@ export const PAGES = [
   {
     id: 4,
     name: 'Healthcare Center',
-    path: '/',
+    path: '/healthcare',
     icon: ICONS.healthcare,
-  },
-  {
-    id: 5,
-    name: 'Profile',
-    path: '/',
-    icon: ICONS.profile,
-  },
+  }
 ];
